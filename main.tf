@@ -4,7 +4,7 @@ resource "aws_vpc" "sportradar_vpc" {
   enable_dns_support   = true
 
   tags = {
-    Name = "sportradar_vpc"
+    Name = var.instance_name
   }
 }
 
